@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="manifest" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+<title>Payment Form</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2{text-align: center;}
+
+.payment-option {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.upiid{
+    text-align: center;
+}
+button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.payment-option label {
+    margin-bottom: 5px;
+}
+
+.payment-option img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+.payment-option span {
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Select UPI : </h2>
+   <br>
+   <form>
+    <div class="payment-option">
+        <label>
+            <input type="radio" name="payment-method" checked>
+          <img src="paytm.png" alt="paytm">
+           ><span>Paytm</span>
+        </label>
+    </div>
+
+    <div class="payment-option">
+        <label>
+            <input type="radio" name="payment-method">
+            <img src="googlepay.jpeg" alt="googlepay">
+             <span>GooglePay</span>
+        </label>
+    </div>
+
+    <div class="payment-option">
+        <label>
+            <input type="radio" name="payment-method">
+             <img src="phonepay.png" alt="PhonePay">
+              <span>PhonePay</span>
+        </label>
+    </div>
+   <div class="upiid">
+    <label for="upiid"><b>UPI Id:</b></label>
+    <input type="text" id="upiid" name="upiid" placeholder="abc@xyz"  width="80%" required>
+   </div>
+   </div>
+   <button type="submit" >Pay Now</button>
+</div>
+</form>
+</div>
+</body>
+</html>

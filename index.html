@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+    <link rel="manifest" href="C:\Users\Ravi\CPP\.vscode\kuchbhiwebd\moviebookinpage\Film - Flix2.png">
+<title>Movie Ticket Booking</title>
+<style>
+    body {
+
+        margin: 2px;
+        font-family: sans-serif;
+        padding: 2px;
+    }
+ 
+    .navbar {
+        background-color: white;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar-logo {
+        width: 100px;
+    }
+
+    .search-location {
+        margin-left: auto;
+    }
+
+    .search-movies input {
+        width: 374.792px;
+        height: 30.333px;
+        padding: 5px;
+        font-size: 14px;
+        margin-left: 40px;
+        padding-left: 30px; /* Space for the search icon */
+        background-image: url('search-icon.png'); /* URL to your search icon image */
+        background-size: 20px; /* Size of the search icon */
+        background-position: 5px center; /* Position of the search icon */
+        background-repeat: no-repeat;
+    }
+
+    select {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .navbar-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .signin-button {
+        margin-left: 300px;
+        background-color: gold;
+        color: black;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .signup-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+    .movie-posters {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; /* Adjust the gap between posters */
+        padding: 20px;
+    }
+
+    .swiper-slide{
+        border-radius: 10px;
+    }
+
+    .movie-poster img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div style="background-color: rgb(30, 0, 255); height:10px;"></div>
+    <div class="navbar navbar-expand-lg">
+        <div class="navbar-logo me-5">
+            <img src="Film - Flix.png" width="140px" alt="Logo">
+        </div>
+        <div class="search-movies me-5">
+            <input type="text" style="width: 374.792px; height: 30.333px;" placeholder="&#128269; Search movies...">
+        </div>
+        <div class="navbar-buttons">
+            <a href="login.html"> <button class="signin-button">Log In</button></a>
+            <a href="signup.html" ><button class="signup-button">Sign Up</button></a>
+        </div>
+        <div class="search-location">
+            <select name="location me-5" id="location">
+                <option value="Noida">Select Location</option>
+                <option value="Noida">Noida</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Faridabad">Faridabad</option>
+                <option value="Hapur">Hapur</option>
+                <option value="Bareilly">Bareilly</option>
+                <option value="Rampur">Rampur</option>
+                <option value="Moradabad">Moradabad</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Lucknow">Lucknow</option>
+            </select>
+        </div>
+    </div>
+    <div style="background-color: gold; height:20px;"></div>
+
+    <section>
+        <h2 style="margin-left: 30px;">Recommended Movies </h2>
+        <div class="movie-posters">
+            
+            <div class="swiper-slide"><a href="movieseat.html"><img src="crew.jpeg" alt="crew"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="dune2.jpeg" alt="dune2 "></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="fallguy.jpeg" alt="fallguy"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="fighter.jpeg" alt="fighter"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="kalki.jpeg" alt="kalki"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="laapataaladies.jpeg" alt="laapataaladies"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="quantummania.jpeg" alt="quantummania"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="saalar.jpeg" alt="saalar"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="shaitan.jpeg" alt="shaitan"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="shazam.jpeg" alt="shazam"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="welcome3.jpeg" alt="welcome3"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="yoddha.jpeg" alt="yoddha"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="tbauj.jpeg" alt="tbauj"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="aquaman.jpeg" alt="aquaman"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="murdermubrak.jpeg" alt="murdermubarak"></a></div>
+            <div class="swiper-slide"><a href="movieseat.html"><img src="madgao.jpeg" alt="madgao"></a></div>
+        </div>
+    </section>
+
+</body>
+</html>
